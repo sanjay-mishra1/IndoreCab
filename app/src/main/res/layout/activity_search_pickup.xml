@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:background="#fff"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="30dp"
+                android:onClick="backOnClicked"
+                android:src="@drawable/arrow_left"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Pickup"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_height="wrap_content" />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        app:cardCornerRadius="10dp">
+
+        <EditText
+            android:id="@+id/searchView"
+            android:layout_width="368dp"
+            android:queryHint="Search"
+            android:hint="Search"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/ic_search_black_24dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/common_google_signin_btn_icon_dark_normal_background" />
+    </android.support.v7.widget.CardView>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="My location"
+        android:drawableStart="@drawable/ic_my_location_black_24dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:clickable="true"
+        android:onClick="useMyLocationClicked"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:focusable="true" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp">
+
+    </ListView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Recent"
+        android:drawableStart="@drawable/ic_history_black_24dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">IndoreCab</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="error_occurred">Error occurred</string>
+    <string name="error_occurred_detail">Please try to reload the page</string>
+    <string name="title_activity_my_location">Map</string>
+    <string name="title_activity_test_map">Map</string>
+    <string name="rupeesSymbol">₹</string>
+    <string name="estimated_cash">Estimated cash to be paid : ₹</string>
+    <string name="user_name">Hey,</string>
+    <string name="where_are_you_going">Where are you going?</string>
+    <string name="enter_destination">Enter destination</string>
+    <string name="affordable_compact_rides">Affordable, compact rides</string>
+    <string name="terms_and_conditions">Terms and conditions</string>
+    <string name="privacy">Privacy policy</string>
+    <string name="your_trips">Your Trips</string>
+    <string name="wallet_balance">Wallet balance :</string>
+    <string name="_0_0">₹ 0.0</string>
+    <string name="share_the_app">Share the app and give friends free rides to try the app, worth up to ₹25 each!</string>
+    <string name="share_your_invite_code">Share Your Invite Code</string>
+    <string name="send_your_friends_free_rides">Send your friends free rides</string>
+    <string name="enter_your_emailid_optional">Enter your EmailID (Optional)</string>
+    <string name="enter_your_name">Enter your Name</string>
+    <string name="terms">Terms and conditions here</string>
+    <string name="privacy_policy">Privacy Policy here</string>
+    <string name="help">Help here</string>
+    <string name="profile_photo">Profile Photo</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="remove_photo">Delete</string>
+
+
+</resources>

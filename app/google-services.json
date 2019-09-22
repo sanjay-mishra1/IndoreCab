@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "356108121880",
+    "firebase_url": "https://citycab-398f1.firebaseio.com",
+    "project_id": "citycab-398f1",
+    "storage_bucket": "citycab-398f1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:356108121880:android:b4cb9b6992439059",
+        "android_client_info": {
+          "package_name": "com.example.sanjay.cab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "356108121880-t1velv6cv0e0heuoe0qfut9tm19rl7va.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sanjay.cab",
+            "certificate_hash": "c8ac53340352bedbbef55920e803ad3945fe074e"
+          }
+        },
+        {
+          "client_id": "356108121880-vce60ob4a75hptv1qchr37v1hrokqqjh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBR4GVSZCnZTbxKwYsO0KHV31xBZYmqVMA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "356108121880-vce60ob4a75hptv1qchr37v1hrokqqjh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

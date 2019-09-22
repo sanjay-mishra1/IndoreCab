@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:background="#fff"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+            <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:onClick="backOnClicked"
+            android:src="@drawable/arrow_left"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Account Settings"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:paddingStart="10dp"
+                android:paddingEnd="1dp"
+                android:layout_marginStart="10dp"
+                android:layout_height="wrap_content" />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:onClick="editUserClicked"
+
+         android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/user"
+        android:tint="#fff"
+
+        android:id="@+id/userImage"
+        android:background="@drawable/curve_border"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_toEndOf="@id/userImage"
+        android:layout_marginStart="10dp"
+        android:onClick="editUserClicked"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/username"
+            android:text="Sanjay Mishra"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/userMobile"
+            android:text="+91 "
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/userEmail"
+            android:text="Enter email id"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:textColor="#000"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+       android:layout_marginTop="20dp"
+       android:background="#a2a2a2" />
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Favorite"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_home_black_24dp"
+            android:tint="#000"
+            android:layout_centerVertical="true"
+            android:id="@+id/Image1"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_toEndOf="@id/Image1"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+             android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                 android:text="Home"
+                android:textSize="14sp"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/homeLoc"
+                android:text="+91 "
+                android:textSize="14sp"
+                android:textColor="#000"
+                android:visibility="gone"
+                android:layout_height="wrap_content" />
+
+         </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/deleteWorkLoc"
+            android:text="Delete"
+            android:visibility="gone"
+
+            android:layout_marginEnd="10dp"
+            android:textSize="14sp"
+            android:onClick="deleteHomeClicked"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/pink"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerVertical="true"
+
+            android:src="@drawable/ic_work_black_24dp"
+            android:tint="#000"
+            android:id="@+id/Image2"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_toEndOf="@id/Image2"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+             android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                 android:text="Work"
+                android:textSize="14sp"
+                android:textColor="#000"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/workLoc"
+                android:text="+91 "
+                android:textSize="14sp"
+                android:textColor="#000"
+                android:visibility="gone"
+                android:layout_height="wrap_content" />
+
+         </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/deleteLoc"
+            android:text="Delete"
+            android:layout_marginEnd="10dp"
+            android:textSize="14sp"
+            android:visibility="gone"
+            android:onClick="deleteWorkClicked"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/pink"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="#a2a2a2" />
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/your_trips"
+        android:textColor="#000"
+        android:drawableTint="#000"
+        android:drawableStart="@drawable/ic_directions_car_black_24dp"
+        android:textSize="18sp"
+        android:drawablePadding="15dp"
+        android:layout_marginTop="20dp"
+        android:onClick="seeAllTripsClicked"
+        android:layout_marginStart="20dp"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="#a2a2a2" />
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Sign Out"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:onClick="signoutClicked"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/terms_and_conditions"
+        android:textColor="#000"
+        android:onClick="termsConditionClicked"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Help"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:onClick="helpClicked"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/privacy"
+        android:textColor="#000"
+        android:onClick="privacyClicked"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

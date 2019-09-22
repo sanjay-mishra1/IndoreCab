@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_gravity="center"
+
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+         android:layout_height="wrap_content">
+
+
+    <!--<ImageView-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="200dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:src="@drawable/error_occurred"/>-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="@string/error_occurred"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textColor="#c1000000"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif"
+        android:id="@+id/errorMessage"
+         android:maxWidth="230dp"
+        android:text="@string/error_occurred_detail"
+        android:textAlignment="center"
+        android:textSize="15sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+        android:layout_width="wrap_content"
+        android:text="Retry"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="#fff"
+        android:id="@+id/refreshButton"
+         android:backgroundTint="@color/colorPrimary"
+        android:layout_height="wrap_content" />
+        <Button
+            android:layout_width="wrap_content"
+            android:text="Login"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="#fff"
+            android:id="@+id/login"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

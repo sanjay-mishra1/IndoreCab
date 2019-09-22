@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    >
+
+
+     <include layout="@layout/bottom_sheet"
+            android:id="@+id/b"
+
+          />
+    <include layout="@layout/activity_maps"
+
+        />
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="40dp"
+        app:fabCustomSize="40dp"
+        app:layout_anchor="@id/b"
+        android:src="@drawable/ic_my_location_black_24dp"
+        android:tint="#fff"
+        android:layout_marginBottom="100dp"
+
+        android:onClick="backToMyLocationOnClicked"
+        app:layout_anchorGravity="top|end"
+         android:layout_marginEnd="10dp"
+        android:layout_height="40dp" />
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".MyLocationActivity" >
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+      >
+
+    </fragment>
+
+    <ProgressBar
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="-10dp"
+        android:indeterminate="true"
+
+         android:progressTint="@android:color/holo_blue_bright"
+        android:layout_height="wrap_content"
+        android:background="#00868686" />
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Getting your location"
+        android:textSize="20sp"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="wrap_content"
+        android:text="Done"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+         android:id="@+id/doneBt"
+        android:visibility="gone"
+        android:onClick="loadMap"
+        android:textColor="#fff"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_height="wrap_content" />
+</LinearLayout>

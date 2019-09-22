@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+       xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="5dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/carname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:textColor="#000" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/otp"
+        android:text="OTP : "
+        android:background="#ffff00"
+        android:padding="5dp"
+        android:textColor="#000"
+        android:layout_gravity="end"
+        android:layout_margin="7dp"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/carImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_directions_car_black_24dp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toEndOf="@id/carImage"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/carStartingNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp" />
+
+                    <TextView
+                        android:id="@+id/carEndNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/carStartingNo"
+                        android:layout_marginStart="1dp"
+                        android:layout_toEndOf="@id/carImage"
+                        android:gravity="center"
+                        android:textColor="#000"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="false"
+                android:layout_centerVertical="false"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="5dp">
+
+                <ImageView
+                    android:id="@+id/driverImage"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_directions_car_black_24dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@id/driverImage"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/driverName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp" />
+
+                    <TextView
+                        android:id="@+id/driverRating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/driverName"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="5dp"
+                        android:layout_toStartOf="@id/driverImage"
+
+                        android:drawableStart="@drawable/ic_star_black_24dp"
+                        android:drawablePadding="5dp"
+                        android:textColor="#000"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                 android:background="@drawable/border_background"
+                android:drawableTop="@drawable/ic_call_black_24dp"
+                android:drawablePadding="5dp"
+                android:padding="20dp"
+                android:id="@+id/callDriver"
+                android:text="Call Driver"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                 android:drawableTop="@drawable/ic_cancel_black_24dp"
+                android:drawablePadding="5dp"
+                android:padding="20dp"
+                android:id="@+id/cancelTrip"
+                android:background="@drawable/border_background"
+
+                android:text="Cancel ride"
+                android:textAllCaps="true" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+
+                android:layout_height="87dp">
+
+                <TextView
+                    android:id="@+id/moreOption"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/border_background"
+                    android:drawableTop="@drawable/option"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:padding="20dp"
+                    android:text="More" />
+                <Spinner
+                    android:id="@+id/spinnerCountries"
+                    android:layout_width="1dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/option"
+                    android:layout_height="1dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+
+
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="5dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/price"
+        android:textColor="#000"
+        android:text="@string/estimated_cash"
+        android:layout_margin="7dp"
+        android:layout_height="wrap_content" />
+ </android.support.v7.widget.CardView>
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="5dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+         android:textColor="#000"
+
+        android:text="Rate the journey"
+        android:layout_margin="7dp"
+        android:layout_height="wrap_content" />
+
+    <RatingBar
+         android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:numStars="5" />
+ </android.support.v7.widget.CardView>
+</LinearLayout>

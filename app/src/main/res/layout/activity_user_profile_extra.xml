@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:background="#fff"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="backOnClicked"
+                android:src="@drawable/arrow_left"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Extra"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:paddingStart="10dp"
+                android:paddingEnd="1dp"
+                android:layout_marginStart="10dp"
+                android:layout_height="wrap_content" />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="#fff"
+            android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_margin="20dp"
+    android:textSize="20sp"
+    android:textColor="#000"
+    android:text="@string/wallet_balance"
+    android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+             android:textSize="20sp"
+            android:text="@string/_0_0"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#000"
+            android:id="@+id/walletAmount"
+            android:background="@drawable/curve_border"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="#a2a2a2" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="38sp"
+         android:padding="10dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/send_your_friends_free_rides"
+        android:layout_marginTop="20dp"
+        android:textColor="#000"
+        android:layout_marginEnd="20dp"
+         android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:lineSpacingExtra="5sp"
+
+        android:text="@string/share_the_app"
+        android:textColor="#000"
+        android:textSize="22sp" />
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="230dp"
+        android:layout_gravity="center"
+         android:src="@drawable/invite"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:text="@string/share_your_invite_code"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:padding="22dp"
+        android:onClick="shareAppClicked"
+        android:text="Share code"
+        android:background="@drawable/curve_border"
+        android:id="@+id/shareCode"
+        android:drawableEnd="@drawable/ic_share_black_24dp"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

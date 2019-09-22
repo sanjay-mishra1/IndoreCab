@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    >
+
+
+    <include layout="@layout/map_layout" />
+
+    <include
+        android:id="@+id/b"
+        layout="@layout/bottom_sheet"  />
+
+    <include layout="@layout/address_bar" />
+
+    <include
+        android:id="@+id/carType"
+        layout="@layout/select_car_type"
+
+        android:visibility="gone" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="100dp"
+        android:onClick="backToMyLocationOnClicked"
+        android:src="@drawable/ic_my_location_black_24dp"
+         app:backgroundTint="#fff"
+        app:fabCustomSize="40dp"
+        app:layout_anchor="@id/b"
+        app:layout_anchorGravity="top|end" />
+
+</android.support.design.widget.CoordinatorLayout>
